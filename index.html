@@ -1,14 +1,54 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUX | Socials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <div id="canvas-container"></div>
+
+    <div class="main-container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <!-- The h1 is removed, 3D text will be rendered here by Three.js -->
+            </div>
+        </section>
+
+        <section class="social-section">
+            <div class="social-links-container">
+                <a href="https://www.tiktok.com/@tux_luxy" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="https://i.ibb.co/gbZR5VS7/1000025594.jpg" alt="TikTok">
+                    <span>TikTok</span>
+                </a>
+                <a href="https://www.youtube.com/@Tux_luxy" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="https://i.ibb.co/HLmQfpzL/1000025600.jpg" alt="YouTube">
+                    <span>YouTube</span>
+                </a>
+                <a href="https://www.twitch.tv/tux_luxy" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="https://i.ibb.co/60jcSWT7/1000025597.jpg" alt="Twitch">
+                    <span>Twitch</span>
+                </a>
+            </div>
+            <footer class="footer">
+                <p>made by kantasu</p>
+            </footer>
+        </section>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
